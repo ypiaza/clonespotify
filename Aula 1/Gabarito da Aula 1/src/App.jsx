@@ -1,8 +1,12 @@
 import Header from "./components/Header";
+import Main from "./components/Main";
 
 function App() {
   return (
-      <Header />
+      <div className="bg-zinc-900 h-[100svw]">
+        <Header />
+        <Main />
+      </div>
   )
 }
 
