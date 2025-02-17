@@ -3,7 +3,7 @@ import Main from "./components/Main";
 
 function App() {
   return (
-      <div className="bg-zinc-900 h-[100svw]">
+      <div className="bg-zinc-900 h[100vh]">
         <Header />
         <Main />
       </div>
