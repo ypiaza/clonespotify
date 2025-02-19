@@ -1,6 +1,7 @@
 import { artistArray } from '../assets/database/artists'
 import { songsArray } from '../assets/database/songs'
 import SingleItem from './SingleItem'
+import SingleItemMusic from './SingleItemMusic'
 import { Link } from 'react-router-dom'
 
 
@@ -28,7 +29,7 @@ const Main = () => {
 
         <div className='grid grid-cols-5 items-center justify-center'>
           {songsArray.filter((_, index) => index < 10).map((artist, index) => (
-            <SingleItem key={index} index={index} image={artist.image} name={artist.name} />
+            <SingleItemMusic key={index} index={index} image={artist.image} name={artist.name} />
           ))}
         </div>
       </div>
