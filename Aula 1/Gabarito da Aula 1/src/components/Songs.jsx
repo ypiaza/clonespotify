@@ -1,9 +1,9 @@
 import React from 'react'
 import SingleItem from './SingleItem'
-import { artistArray } from '../assets/database/artists'
 import { Link } from 'react-router-dom'
+import { songsArray } from '../assets/database/songs'
 
-const Artists = () => {
+const Songs = () => {
   return (
     <div className=' bg-gradient-to-b from-[#1DB954]/60 to-zinc-900 rounded-2xl mx-6'>
       <div className='flex items-end justify-between py-6 px-8'>
@@ -12,7 +12,7 @@ const Artists = () => {
       </div>
 
       <div className='grid grid-cols-5 items-center justify-center'>
-        {artistArray.map((artist, index) => (
+        {songsArray.map((artist, index) => (
           <SingleItem key={index} index={index} image={artist.image} name={artist.name} />
         ))}
       </div>
@@ -20,4 +20,4 @@ const Artists = () => {
   )
 }
 
-export default Artists
+export default Songs
