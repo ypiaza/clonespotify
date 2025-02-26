@@ -3,6 +3,7 @@ import Main from "./components/Main";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Artists from "./components/Artists";
 import Songs from "./components/Songs";
+import ArtistPage from "./components/ArtistPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/artists" element={<Artists />} />
           <Route path="/songs" element={<Songs />} />
+          <Route path="/artistPage/:id" element={<ArtistPage />} />
         </Routes>
       </Router>
     </div>

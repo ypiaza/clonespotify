@@ -13,7 +13,7 @@ const Artists = () => {
 
       <div className='grid grid-cols-5 items-center justify-center'>
         {artistArray.map((artist, index) => (
-          <SingleItem key={index} index={index} image={artist.image} name={artist.name} />
+          <SingleItem id={artist.id} key={index} index={index} image={artist.image} name={artist.name} />
         ))}
       </div>
     </div>
