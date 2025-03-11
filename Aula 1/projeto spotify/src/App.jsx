@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Artists from "./components/Artists";
 import Songs from "./components/Songs";
 import ArtistPage from "./components/ArtistPage";
+import PlayerSong from "./components/PlayerSong";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/artists" element={<Artists />} />
           <Route path="/songs" element={<Songs />} />
           <Route path="/artistPage/:id" element={<ArtistPage />} />
+          <Route path="/playerSong/:name" element={<PlayerSong />} />
         </Routes>
       </Router>
     </div>

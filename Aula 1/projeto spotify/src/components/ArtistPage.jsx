@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { artistArray } from '../assets/database/artists';
 import { songsArray } from '../assets/database/songs';
 import { useState } from 'react';
@@ -12,6 +12,8 @@ const ArtistPage = () => {
     const songs = songsArray.filter((item) => item.artist === artist.name);
 
     const [hoverSong, setHoverSong] = useState(null)
+
+    const navigate = useNavigate();
 
 
     return (
@@ -41,6 +43,7 @@ const ArtistPage = () => {
                                 <div key={index} className='flex items-center justify-between w-full p-4 hover:bg-white/10 rounded'
                                      onMouseOver={() => setHoverSong(index)}
                                      onMouseOut={() => setHoverSong(null)}
+                                     onClick={() => navigate(`/playerSong/${item.name}`)}
                                 >
                                     <div className='flex items-center'>
                                         <div className={`h-10 w-10 text-white/70 font-semibold flex items-center `}>
@@ -55,6 +58,7 @@ const ArtistPage = () => {
                                             <h2 className="text-white font-semibold">{item.name}</h2>
                                         </div>
                                     </div>
+
                                     <div className='h-10 w-10 text-white/70 font-semibold flex items-center'>
                                         <h2>{item.duration}</h2>
                                     </div>
