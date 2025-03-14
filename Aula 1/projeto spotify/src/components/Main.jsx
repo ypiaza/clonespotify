@@ -29,7 +29,7 @@ const Main = () => {
 
         <div className='grid grid-cols-5 items-center justify-center'>
           {songsArray.filter((_, index) => index < 10).map((artist, index) => (
-            <SingleItemMusic key={index} index={index} image={artist.image} name={artist.name} />
+            <SingleItemMusic key={index} index={index} image={artist.image} name={artist.name} link={artist.name} />
           ))}
         </div>
       </div>

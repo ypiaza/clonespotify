@@ -13,7 +13,7 @@ const Songs = () => {
 
       <div className='grid grid-cols-5 items-center justify-center'>
         {songsArray.map((artist, index) => (
-          <SingleItemMusic key={index} index={index} image={artist.image} name={artist.name} />
+          <SingleItemMusic key={index} index={index} image={artist.image} name={artist.name} link={artist.name} />
         ))}
       </div>
     </div>
