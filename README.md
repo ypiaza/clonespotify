@@ -1,4 +1,4 @@
-# 🎧 Clone do Spotify – Aula 1
+# 🎧 Clone do Spotify
 
 Este projeto é uma réplica da interface do Spotify, desenvolvida com **React JS** e **Tailwind CSS**.  
 O objetivo é praticar a construção de interfaces modernas, responsivas e agradáveis ao usuário, utilizando componentes reutilizáveis e estilização eficiente.
